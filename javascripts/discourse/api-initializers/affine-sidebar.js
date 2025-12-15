@@ -2,17 +2,11 @@ import { apiInitializer } from "discourse/lib/api";
 
 export default apiInitializer("1.0.0", (api) => {
   const currentUser = api.getCurrentUser();
-  const showForAnon = api.container.lookup("service:site-settings").show_for_anon;
 
-  // Only show for logged-in users unless configured otherwise
-  if (!currentUser && !showForAnon) {
+  // Only show for logged-in users
+  if (!currentUser) {
     return;
   }
-
-  const siteSettings = api.container.lookup("service:site-settings");
-  const affineUrl = siteSettings.affine_url || "https://affine.yodev.dev";
-  const linkTitle = siteSettings.affine_link_title || "Workspace";
-  const linkIcon = siteSettings.affine_link_icon || "cube";
 
   api.addSidebarSection(
     (BaseCustomSidebarSection, BaseCustomSidebarSectionLink) => {
@@ -26,15 +20,15 @@ export default apiInitializer("1.0.0", (api) => {
         }
 
         get href() {
-          return affineUrl;
+          return settings.affine_url;
         }
 
         get title() {
-          return linkTitle;
+          return settings.affine_link_title;
         }
 
         get text() {
-          return linkTitle;
+          return settings.affine_link_title;
         }
 
         get prefixType() {
@@ -42,11 +36,7 @@ export default apiInitializer("1.0.0", (api) => {
         }
 
         get prefixValue() {
-          return linkIcon;
-        }
-
-        get prefixColor() {
-          return null;
+          return settings.affine_link_icon;
         }
       };
 
@@ -56,7 +46,7 @@ export default apiInitializer("1.0.0", (api) => {
         }
 
         get title() {
-          return "AFFiNE";
+          return settings.affine_link_title;
         }
 
         get text() {
