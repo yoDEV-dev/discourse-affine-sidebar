@@ -63,7 +63,6 @@ export default apiInitializer("1.0.0", (api) => {
       };
 
       return AFFiNESection;
-    },
-    "top"
+    }
   );
 });
