@@ -1,0 +1,8 @@
+{
+  "name": "AFFiNE Sidebar Link",
+  "about_url": "https://github.com/yoDEV-dev/discourse-affine-sidebar",
+  "license_url": "https://github.com/yoDEV-dev/discourse-affine-sidebar/blob/main/LICENSE",
+  "component": true,
+  "authors": "yoDEV",
+  "minimum_discourse_version": "3.0.0"
+}

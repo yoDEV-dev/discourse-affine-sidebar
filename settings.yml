@@ -1,0 +1,19 @@
+affine_url:
+  type: string
+  default: "https://affine.yodev.dev"
+  description: "URL to your AFFiNE instance"
+
+affine_link_title:
+  type: string
+  default: "Workspace"
+  description: "Text shown in the sidebar"
+
+affine_link_icon:
+  type: string
+  default: "cube"
+  description: "Font Awesome icon name (without 'fa-' prefix)"
+
+show_for_anon:
+  type: bool
+  default: false
+  description: "Show the sidebar link for anonymous (not logged in) users"
