@@ -1,0 +1,11 @@
+// Move AFFiNE link to top of Community section
+.sidebar-section[data-section-name="community"] {
+  .sidebar-section-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-section-link[data-link-name="affine-workspace"] {
+    order: -1;
+  }
+}
