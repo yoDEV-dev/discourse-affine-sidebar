@@ -15,5 +15,10 @@ affine_link_icon:
 
 show_for_anon:
   type: bool
-  default: false
+  default: true
   description: "Show the sidebar link for anonymous (not logged in) users"
+
+anon_message:
+  type: string
+  default: "You must be logged in to access the Workspace."
+  description: "Message shown to anonymous users when they click the link"
