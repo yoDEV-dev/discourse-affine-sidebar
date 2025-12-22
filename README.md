@@ -21,7 +21,7 @@ A Discourse theme component that adds an AFFiNE workspace link to the sidebar fo
 
 | Setting | Default | Description |
 |---------|---------|-------------|
-| `affine_url` | `https://affine.yodev.dev` | URL to your AFFiNE instance |
+| `affine_url` | `https://workplace.yodev.dev` | URL to your AFFiNE instance |
 | `affine_link_title` | `Workspace` | Text shown in the sidebar |
 | `affine_link_icon` | `cube` | Font Awesome icon name |
 | `show_for_anon` | `false` | Show link for anonymous users |

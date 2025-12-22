@@ -1,6 +1,6 @@
 affine_url:
   type: string
-  default: "https://affine.yodev.dev"
+  default: "https://workplace.yodev.dev"
   description: "URL to your AFFiNE instance"
 
 affine_link_title:
