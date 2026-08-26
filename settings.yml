@@ -16,4 +16,26 @@ affine_link_icon:
 show_for_anon:
   type: bool
   default: true
-  description: "Show the sidebar link for anonymous (not logged in) users"
+  description: "Show the sidebar links for anonymous (not logged in) users"
+
+# YOD-517 — worX, pinned directly below Workplace.
+
+worx_enabled:
+  type: bool
+  default: true
+  description: "Show the worX link. Turn off to remove it without affecting the Workplace link or uninstalling the component."
+
+worx_url:
+  type: string
+  default: "https://worx.yodev.dev"
+  description: "URL to worX. This is the production marketplace host; devmarket.yodev.dev is deprecated."
+
+worx_link_title:
+  type: string
+  default: "yoDEV worX"
+  description: "Text shown in the sidebar"
+
+worx_link_icon:
+  type: string
+  default: "briefcase"
+  description: "Font Awesome icon name (without 'fa-' prefix). An icon outside Discourse's bundled subset renders as nothing at all — add it to modifiers.svg_icons in about.json if you change this."

@@ -1,9 +1,18 @@
-// Move AFFiNE link to top of Community section
+// Pin the yoDEV app links to the top of the Community section, in order.
+//
+// The section is a plain list; making it a flex column is what lets `order`
+// override the position Discourse gives each link. The two values are one
+// apart deliberately — Workplace first, worX immediately beneath it — and
+// both are far enough below zero to stay above every core link.
 #sidebar-section-content-community {
   display: flex;
   flex-direction: column;
 
   li[data-list-item-name="affine-workspace"] {
     order: -100;
+  }
+
+  li[data-list-item-name="worx-marketplace"] {
+    order: -99;
   }
 }
