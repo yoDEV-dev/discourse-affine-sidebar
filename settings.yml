@@ -85,8 +85,8 @@ decisions_banner_show_for_anon:
 
 decisions_banner_anchor:
   type: string
-  default: "teaser-datasets"
-  description: "Fragment appended to the Decisions URL for the banner's call to action, so it lands on the public results. Blank links to the top of the page."
+  default: ""
+  description: "Optional fragment appended to the Decisions URL for the banner's call to action. Blank (default) lands at the top of the page."
 
 decisions_banner_start_date:
   type: string

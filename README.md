@@ -40,7 +40,7 @@ A Discourse theme component that puts the yoDEV apps — **Workplace**, **worX**
 | `decisions_new_badge` | `true` | Show the New / Nuevo / Novo badge on the sidebar link |
 | `decisions_banner_enabled` | `true` | Show the Decisions banner on the landing pages |
 | `decisions_banner_show_for_anon` | `true` | Also show the banner to anonymous visitors (independent of `show_for_anon`) |
-| `decisions_banner_anchor` | `teaser-datasets` | Fragment the banner's CTA lands on — the public results on the Decisions landing |
+| `decisions_banner_anchor` | `(blank — top of page)` | Fragment the banner's CTA lands on — the public results on the Decisions landing |
 | `decisions_banner_start_date` | *(blank)* | Optional first day, `YYYY-MM-DD`, UTC, inclusive |
 | `decisions_banner_end_date` | *(blank)* | Optional last day, `YYYY-MM-DD`, UTC, inclusive |
 | `decisions_banner_version` | `1` | Dismissal is remembered per browser under this version; change it to re-show the banner |
