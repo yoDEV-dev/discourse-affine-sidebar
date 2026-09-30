@@ -8,7 +8,7 @@ en:
       eyebrow: "New on yoDEV"
       title: "yoDEV Decisions: compare Jev with any LLM"
       body: "Real results for Jev against popular LLMs on public datasets: accuracy, cost and latency."
-      highlight: "Then run it on your own data, free for yoDEV members."
+      highlight: "Try it on your own data: yoDEV covers Jev for members."
       cta: "See the results"
       disclaimer: "yoDEV Decisions is an independent yoDEV tool, not affiliated with TypeSafe AI."
       dismiss: "Dismiss the yoDEV Decisions announcement"
