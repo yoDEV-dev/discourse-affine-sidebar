@@ -39,3 +39,66 @@ worx_link_icon:
   type: string
   default: "briefcase"
   description: "Font Awesome icon name (without 'fa-' prefix). An icon outside Discourse's bundled subset renders as nothing at all — add it to modifiers.svg_icons in about.json if you change this."
+
+# YOD-659 — yoDEV Decisions: a sidebar link directly below worX, and a
+# dismissible announcement banner on the community landing pages.
+
+decisions_enabled:
+  type: bool
+  default: true
+  description: "Show the yoDEV Decisions link in the sidebar, directly below worX."
+
+decisions_url:
+  type: string
+  default: "https://decisions.yodev.dev/"
+  description: "yoDEV Decisions for Spanish and Portuguese readers (every locale except English). Used by the sidebar link and the banner. On Discourse DEV set this to https://staging-decisions.yodev.dev/. Must be https."
+
+decisions_url_en:
+  type: string
+  default: "https://decisions.yodev.dev/en"
+  description: "yoDEV Decisions for English readers. Used by the sidebar link and the banner. On Discourse DEV set this to https://staging-decisions.yodev.dev/en. Must be https."
+
+decisions_link_title:
+  type: string
+  default: "yoDEV Decisions"
+  description: "Text shown in the sidebar. A product name, so it is not translated."
+
+decisions_link_icon:
+  type: string
+  default: "scale-balanced"
+  description: "Font Awesome icon name (without 'fa-' prefix). An icon outside Discourse's bundled subset renders as nothing at all — add it to modifiers.svg_icons in about.json if you change this."
+
+decisions_new_badge:
+  type: bool
+  default: true
+  description: "Show the small New / Nuevo / Novo badge next to the Decisions sidebar link. Turn off once it is no longer new."
+
+decisions_banner_enabled:
+  type: bool
+  default: true
+  description: "Show the dismissible yoDEV Decisions banner on the community landing pages (/, /latest, /categories). Theme markup only: it is not a banner topic, creates no post and sends no notification."
+
+decisions_banner_show_for_anon:
+  type: bool
+  default: true
+  description: "Also show the banner to anonymous visitors. Independent of show_for_anon, which governs the sidebar links only."
+
+decisions_banner_anchor:
+  type: string
+  default: "teaser-datasets"
+  description: "Fragment appended to the Decisions URL for the banner's call to action, so it lands on the public results. Blank links to the top of the page."
+
+decisions_banner_start_date:
+  type: string
+  default: ""
+  description: "Optional. First day to show the banner, as YYYY-MM-DD (UTC, inclusive). Blank means immediately. A malformed date hides the banner."
+
+decisions_banner_end_date:
+  type: string
+  default: ""
+  description: "Optional. Last day to show the banner, as YYYY-MM-DD (UTC, inclusive). Blank means no end. A malformed date hides the banner."
+
+decisions_banner_version:
+  type: string
+  default: "1"
+  description: "Dismissal is remembered per browser under this version. Change it (e.g. to 2) to show the banner again to readers who closed an earlier one."

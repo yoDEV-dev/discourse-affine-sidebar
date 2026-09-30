@@ -1,0 +1,13 @@
+en:
+  theme_metadata:
+    description: "Pins the yoDEV apps (Workplace, worX, Decisions) to the top of the community sidebar, and shows a dismissible yoDEV Decisions announcement on the community landing pages."
+  decisions:
+    badge: "New"
+    banner:
+      region_label: "New: yoDEV Decisions"
+      eyebrow: "New on yoDEV"
+      title: "yoDEV Decisions: compare Jev with any LLM"
+      body: "Real results for Jev against popular LLMs on public datasets: accuracy, cost and latency. Then run it on your own data, free for yoDEV members."
+      cta: "See the results"
+      disclaimer: "yoDEV Decisions is an independent yoDEV tool, not affiliated with TypeSafe AI."
+      dismiss: "Dismiss the yoDEV Decisions announcement"

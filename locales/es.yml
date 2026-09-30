@@ -1,0 +1,11 @@
+es:
+  decisions:
+    badge: "Nuevo"
+    banner:
+      region_label: "Novedad: yoDEV Decisions"
+      eyebrow: "Nuevo en yoDEV"
+      title: "yoDEV Decisions: compara Jev con cualquier LLM"
+      body: "Resultados reales de Jev frente a LLM populares en conjuntos de datos públicos: exactitud, costo y latencia. Después, pruébalo con tus propios datos; es gratis para miembros de yoDEV."
+      cta: "Ver los resultados"
+      disclaimer: "yoDEV Decisions es una herramienta independiente de yoDEV, sin afiliación con TypeSafe AI."
+      dismiss: "Cerrar el aviso de yoDEV Decisions"
