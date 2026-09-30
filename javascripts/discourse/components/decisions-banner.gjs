@@ -105,11 +105,15 @@ export default class DecisionsBanner extends Component {
           <p class="yodev-decisions-banner__eyebrow">
             {{i18n (themePrefix "decisions.banner.eyebrow")}}
           </p>
-          <p class="yodev-decisions-banner__title">
+          <p class="yodev-decisions-banner__title" role="heading" aria-level="2">
             {{i18n (themePrefix "decisions.banner.title")}}
           </p>
           <p class="yodev-decisions-banner__body">
             {{i18n (themePrefix "decisions.banner.body")}}
+            {{! Greg: the invitation to try it is the point — literally highlighted. }}
+            <mark class="yodev-decisions-banner__highlight">
+              {{i18n (themePrefix "decisions.banner.highlight")}}
+            </mark>
           </p>
           <div class="yodev-decisions-banner__actions">
             <a class="yodev-decisions-banner__cta" href={{this.href}}>
