@@ -44,6 +44,7 @@ $yd-font-display: "Geist", "Inter", -apple-system, "Segoe UI", Roboto, sans-seri
 $yd-font-body: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
 $yd-primary: #c3c0ff;
 $yd-primary-ink: #1d00a5;
+$yd-green: #5ee0a0; // the beta-offer banner's "Everything included" green
 
 .yodev-decisions-banner {
   container-type: inline-size;
@@ -91,7 +92,7 @@ $yd-primary-ink: #1d00a5;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: $yd-primary;
+    color: $yd-green; // matches "EVERYTHING INCLUDED" on the beta-offer banner
   }
 
   &__title {
