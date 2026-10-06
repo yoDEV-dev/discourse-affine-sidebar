@@ -4,9 +4,9 @@ pt:
     banner:
       region_label: "Novidade: yoDEV Decisions"
       eyebrow: "Novidade no yoDEV"
-      title: "yoDEV Decisions: compare o Jev com qualquer LLM"
+      title: "yoDEV Decisions: teste o Jev com seus próprios dados"
       body: "Resultados reais do Jev frente a LLMs populares em conjuntos de dados públicos: acurácia, custo e latência."
-      highlight: "Teste com os seus próprios dados: o yoDEV cobre o Jev para os membros."
+      highlight: "Grátis para membros e sem conta no OpenRouter; a comparação com um LLM é opcional."
       cta: "Ver os resultados"
       disclaimer: "O yoDEV Decisions é uma ferramenta independente do yoDEV, sem afiliação com a TypeSafe AI."
       dismiss: "Fechar o aviso do yoDEV Decisions"
