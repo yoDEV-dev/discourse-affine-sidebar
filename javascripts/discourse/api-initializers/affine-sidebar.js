@@ -8,6 +8,20 @@ export default apiInitializer((api) => {
     return;
   }
 
+  // YOD-762: the marketing site, first. Forum readers mostly arrive from
+  // search and never see yodev.dev; once they dismiss the promo banners,
+  // nothing else on the forum points there. Its position comes from CSS
+  // `order` like the others (see common.scss), not from this call order.
+  if (settings.home_enabled) {
+    api.addCommunitySectionLink({
+      name: "yodev-home",
+      href: settings.home_url,
+      title: settings.home_link_title,
+      text: settings.home_link_title,
+      icon: settings.home_link_icon,
+    });
+  }
+
   // All users get direct link to Workplace
   api.addCommunitySectionLink({
     name: "affine-workspace",

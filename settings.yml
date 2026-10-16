@@ -18,6 +18,30 @@ show_for_anon:
   default: true
   description: "Show the sidebar links for anonymous (not logged in) users"
 
+# YOD-762 — yoDEV Home, the marketing site, pinned FIRST, above Workplace.
+# Most forum readers arrive from search and never see yodev.dev; once they
+# dismiss the promo banners, nothing on the forum points there.
+
+home_enabled:
+  type: bool
+  default: true
+  description: "Show the yoDEV Home link (the marketing site). Turn off to remove it without affecting the other links."
+
+home_url:
+  type: string
+  default: "https://yodev.dev"
+  description: "URL of the yoDEV marketing site."
+
+home_link_title:
+  type: string
+  default: "yoDEV Home"
+  description: "Text shown in the sidebar"
+
+home_link_icon:
+  type: string
+  default: "house"
+  description: "Font Awesome icon name (without 'fa-' prefix). An icon outside Discourse's bundled subset renders as nothing at all — add it to modifiers.svg_icons in about.json if you change this."
+
 # YOD-517 — worX, pinned directly below Workplace.
 
 worx_enabled:

@@ -6,6 +6,7 @@
 // stay above every core link.
 //
 // ⚠️ Slot map across components (YOD-659 moved these down by two):
+//   -103 yoDEV Home  (this component, YOD-762)
 //   -102 Workplace   (this component)
 //   -101 worX        (this component)
 //   -100 (free: yoDEV Decisions until YOD-737 removed it)
@@ -18,6 +19,10 @@
 #sidebar-section-content-community {
   display: flex;
   flex-direction: column;
+
+  li[data-list-item-name="yodev-home"] {
+    order: -103;
+  }
 
   li[data-list-item-name="affine-workspace"] {
     order: -102;

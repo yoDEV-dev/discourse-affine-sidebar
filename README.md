@@ -1,12 +1,12 @@
 # yoDEV Sidebar Links
 
-A Discourse theme component that puts the yoDEV apps — **Workplace** and **worX** — at the top of the community sidebar, so readers can reach them without leaving for the homepage first.
+A Discourse theme component that puts **yoDEV Home** (the marketing site, yodev.dev) and the yoDEV apps — **Workplace** and **worX** — at the top of the community sidebar. Home was added in YOD-762 (2026-10-16): most readers arrive from search and would otherwise never see the marketing site.
 
 It also carried a **yoDEV Decisions** sidebar link and a landing-page banner (YOD-659); both were removed in YOD-737 (2026-10-09), when Decisions stopped being promoted on the community.
 
 ## Features
 
-- Adds Workplace and worX links, in that order, pinned above the core Community links
+- Adds yoDEV Home, Workplace and worX links, in that order, pinned above the core Community links
 - Works with OIDC authentication (users logged into Discourse arrive already authenticated)
 - Configurable URL, title, and icon per link
 - The worX link can be switched off
@@ -28,6 +28,10 @@ It also carried a **yoDEV Decisions** sidebar link and a landing-page banner (YO
 | `affine_link_title` | `yoDEV Workplace` | Text shown in the sidebar |
 | `affine_link_icon` | `cube` | Font Awesome icon name |
 | `show_for_anon` | `true` | Show the links to anonymous visitors |
+| `home_enabled` | `true` | Show the yoDEV Home link |
+| `home_url` | `https://yodev.dev` | URL of the marketing site |
+| `home_link_title` | `yoDEV Home` | Text shown in the sidebar |
+| `home_link_icon` | `house` | Font Awesome icon name |
 | `worx_enabled` | `true` | Show the worX link |
 | `worx_url` | `https://worx.yodev.dev` | URL to worX |
 | `worx_link_title` | `yoDEV worX` | Text shown in the sidebar |
@@ -37,7 +41,7 @@ It also carried a **yoDEV Decisions** sidebar link and a landing-page banner (YO
 
 Both links are added with `api.addCommunitySectionLink`, which appends them to the
 Community section. Placement is then done in CSS: the section is made a flex column
-and each item is given an `order` (`-102` Workplace, `-101` worX),
+and each item is given an `order` (`-103` yoDEV Home, `-102` Workplace, `-101` worX),
 which lifts them above the core links and fixes their order relative to each other.
 The token calculator (`yodev-token-calculator-theme`) sits at `-98`, below both.
 
