@@ -63,3 +63,25 @@ worx_link_icon:
   type: string
   default: "briefcase"
   description: "Font Awesome icon name (without 'fa-' prefix). An icon outside Discourse's bundled subset renders as nothing at all — add it to modifiers.svg_icons in about.json if you change this."
+
+# YOD-767 — Support (worX), pinned directly below Calculadora de tokens.
+
+support_enabled:
+  type: bool
+  default: true
+  description: "Show the Support link. Turn off to remove it without affecting the other links."
+
+support_url:
+  type: string
+  default: "https://worx.yodev.dev/es/support"
+  description: "URL of the yoDEV support page on worX."
+
+support_link_title:
+  type: string
+  default: "Support"
+  description: "Text shown in the sidebar"
+
+support_link_icon:
+  type: string
+  default: "life-ring"
+  description: "Font Awesome icon name (without 'fa-' prefix). An icon outside Discourse's bundled subset renders as nothing at all — add it to modifiers.svg_icons in about.json if you change this."

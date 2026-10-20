@@ -11,6 +11,7 @@
 //   -101 worX        (this component)
 //   -100 (free: yoDEV Decisions until YOD-737 removed it)
 //    -98 Calculadora de tokens (yodev-token-calculator-theme — unchanged)
+//    -97 Support      (this component, YOD-767)
 //      0 core Discourse links
 // CSS `order` is an integer, so there is no slot between worX (-99) and the
 // calculator (-98) to insert into. Moving this component's own links down,
@@ -32,4 +33,7 @@
     order: -101;
   }
 
+  li[data-list-item-name="yodev-support"] {
+    order: -97;
+  }
 }

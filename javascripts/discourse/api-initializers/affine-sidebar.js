@@ -48,4 +48,17 @@ export default apiInitializer((api) => {
       icon: settings.worx_link_icon,
     });
   }
+
+  // YOD-767: worX support, directly beneath the token calculator. The
+  // calculator lives in yodev-token-calculator-theme at slot -98, so this
+  // takes -97 (see common.scss).
+  if (settings.support_enabled) {
+    api.addCommunitySectionLink({
+      name: "yodev-support",
+      href: settings.support_url,
+      title: settings.support_link_title,
+      text: settings.support_link_title,
+      icon: settings.support_link_icon,
+    });
+  }
 });
